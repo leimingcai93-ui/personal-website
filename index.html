@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leiming Cai - Software Engineer specializing in TypeScript, React, and reliability engineering">
+    <title>Leiming Cai | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">LC</a>
+                <div class="language-toggle">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="zh">中</button>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Leiming Cai</span>
+                </h1>
+                <p class="hero-subtitle">Software Engineer III at Expedia</p>
+                <p class="hero-description">
+                    I build end-to-end solutions across the entire stack—from React frontends and
+                    Node.js/Spring Boot backends to Kubernetes infrastructure and deployment pipelines.
+                    Passionate about TypeScript/React, reliability engineering, and AI-assisted development,
+                    I deliver scalable systems with strong observability and developer productivity in mind.
+                </p>
+                <div class="hero-actions">
+                    <a href="#experience" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>
+                    Software engineer with experience building developer-facing tooling, reliability guardrails,
+                    and large TypeScript/React applications in high-traffic production environments. I focus on
+                    safe, observable, and debuggable systems: canary analysis, SLO-driven rollouts, and strong
+                    logging/telemetry that help engineers move fast without breaking users.
+                </p>
+                <p>
+                    Recently led the integration of business-metric canary analysis (ACA) into our deployment pipeline,
+                    designing brand/product-line-aware routing and alerting, modernizing front-end state management
+                    and dialog patterns, and building full-stack personalization features.
+                </p>
+                <p>
+                    I'm excited about AI-assisted coding as a way to amplify developer productivity and would like
+                    to work closer to the tools and models themselves.
+                </p>
+            </div>
+            <div class="about-info">
+                <div class="info-item">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Seattle</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <span class="info-value">leimingcai93@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Education</span>
+                    <span class="info-value">USC - Master of Engineering</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- Experience Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Software Engineer III</h3>
+                                <p class="timeline-company">Expedia</p>
+                            </div>
+                            <span class="timeline-date">Sep 2025 - Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Led core parts of the MobX v4 to v6 migration for shopping-pwa, refactoring critical state stores (RoomModel, CurrentHotelStore, MapStore) to use explicit makeObservable patterns</li>
+                            <li>Built custom hooks (useAfterDialogClosesCallback) that synchronize dialog close behavior with URL/search-param changes, eliminating race conditions</li>
+                            <li>Led onroad bulkheading solution rollout for Experience API Pricing (EAP), designing Spinnaker pipelines and VirtualService delegation to reduce blast radius</li>
+                            <li>Improved reliability and latency SLOs by customizing configurations, investigating anomalies, and closing incident follow-ups</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Software Engineer II</h3>
+                                <p class="timeline-company">Expedia</p>
+                            </div>
+                            <span class="timeline-date">2023 - Aug 2025</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Implemented bulkheading strategy using Istio service mesh, isolating brand/product-line traffic and reducing cross-blast-radius incidents</li>
+                            <li>Enabled shadow environment and traffic mirroring for critical services, allowing high-risk changes to be validated against production-like traffic</li>
+                            <li>Integrated automatic canary analysis (ACA) with key business metrics, enabling data-driven go/no-go decisions</li>
+                            <li>Improved observability by building focused Datadog dashboards and adding custom headers to enrich Splunk logs</li>
+                            <li>Developed Member Celebration A/B test on global Nav Bar, driving significant positive lift in conversion rate (CVR)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Software Engineer I</h3>
+                                <p class="timeline-company">Expedia</p>
+                            </div>
+                            <span class="timeline-date">2021 - 2023</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Carried out new A/B test SDK EGTnl adoption at the backend Experience-api Layer</li>
+                            <li>Updated PDP (Property Details Page) MOD (Member only deal) Messaging Card for Black Friday Campaign</li>
+                            <li>Implemented new amenity filter with changes across multiple backend services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Test and Reliability Engineer</h3>
+                                <p class="timeline-company">Global Communication Semiconductors</p>
+                            </div>
+                            <span class="timeline-date">2017 - 2021</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Implemented, maintained, and debugged test and data analysis programs using VB6, C, and VBA</li>
+                            <li>Analyzed and evaluated test results to find root cause of semiconductor failures</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">MobX</span>
+                        <span class="skill-tag">Apollo</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Spring Boot</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Istio</span>
+                        <span class="skill-tag">Datadog</span>
+                        <span class="skill-tag">Splunk</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-category-title">AI Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Claude Code</span>
+                        <span class="skill-tag">MCP</span>
+                        <span class="skill-tag">Google AI Studio</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specializations">
+                <h3 class="specializations-title">Specializations</h3>
+                <div class="specializations-list">
+                    <div class="specialization-item">
+                        <div class="specialization-icon">⚛️</div>
+                        <h4>TypeScript & React</h4>
+                        <p>Full-stack development, state management (MobX), custom hooks</p>
+                    </div>
+                    <div class="specialization-item">
+                        <div class="specialization-icon">🛡️</div>
+                        <h4>Reliability Engineering</h4>
+                        <p>Canary analysis, SLO-driven rollouts, bulkheading strategies</p>
+                    </div>
+                    <div class="specialization-item">
+                        <div class="specialization-icon">🔍</div>
+                        <h4>Observability</h4>
+                        <p>Custom dashboards, telemetry, structured logging</p>
+                    </div>
+                    <div class="specialization-item">
+                        <div class="specialization-icon">⚡</div>
+                        <h4>Performance</h4>
+                        <p>State management optimization, latency reduction</p>
+                    </div>
+                    <div class="specialization-item">
+                        <div class="specialization-icon">🤖</div>
+                        <h4>AI-Assisted Development</h4>
+                        <p>Claude Code, MCP integration, developer productivity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-description">
+                    Interested in discussing software engineering, reliability, or AI-assisted development?
+                    I'd love to hear from you.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:leimingcai93@gmail.com" class="contact-method">
+                        <span class="contact-icon">✉️</span>
+                        <span class="contact-text">leimingcai93@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/leimingcai/" target="_blank" rel="noopener noreferrer" class="contact-method">
+                        <span class="contact-icon">💼</span>
+                        <span class="contact-text">linkedin.com/in/leimingcai</span>
+                    </a>
+                    <div class="contact-method">
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text">Based in Seattle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Leiming Cai. Built with care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
