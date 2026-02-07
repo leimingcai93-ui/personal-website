@@ -13,7 +13,7 @@ const translations = {
             greeting: "Hi, I'm ",
             name: 'Leiming Cai',
             title: 'Software Engineer III at Expedia',
-            description: "I build end-to-end solutions across the entire stack—from React frontends and Node.js/Spring Boot backends to Kubernetes infrastructure and deployment pipelines. Passionate about TypeScript/React, reliability engineering, and AI-assisted development, I deliver scalable systems with strong observability and developer productivity in mind.",
+            description: "I build end-to-end solutions across the entire stack—from React frontends and Node.js/Java/Kotlin backends with Spring Boot to Kubernetes infrastructure and deployment pipelines. Passionate about TypeScript/React, reliability engineering, and AI-assisted development, I deliver scalable systems with strong observability and developer productivity in mind.",
             viewWork: 'View My Work',
             getInTouch: 'Get In Touch'
         },
@@ -139,7 +139,7 @@ const translations = {
             greeting: '你好，我是',
             name: '蔡雷鸣',
             title: 'Expedia 软件工程师三级',
-            description: '我构建端到端的全栈解决方案——从 React 前端和 Node.js/Spring Boot 后端到 Kubernetes 基础设施和部署管道。热衷于 TypeScript/React、可靠性工程和 AI 辅助开发，我致力于交付具有强大可观测性和开发者生产力的可扩展系统。',
+            description: '我构建端到端的全栈解决方案——从 React 前端和 Node.js/Java/Kotlin 后端（Spring Boot）到 Kubernetes 基础设施和部署管道。热衷于 TypeScript/React、可靠性工程和 AI 辅助开发，我致力于交付具有强大可观测性和开发者生产力的可扩展系统。',
             viewWork: '查看我的工作',
             getInTouch: '联系我'
         },
